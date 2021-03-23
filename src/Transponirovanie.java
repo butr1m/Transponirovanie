@@ -1,32 +1,20 @@
 public class Transponirovanie {
     public static void main(String[] args) {
-        int n = 3;
+        int a = 2;
+        int b = 4;
+        int array[][] = new int[a][b];
 
-        int[][] a = new int[n][n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                a[i][j] = n * i + j;
-            }
-        }
-        System.out.println("Матрица в строку");
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(a[i][j] + " ");
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                array[i][j] = a * i + j;
+                array[i][j] = b * i + j;
+                System.out.print(array[i][j] + " ");
             }
             System.out.println();
         }
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                int temp = a[i][j];
-                a[i][j] = a[j][i];
-                a[j][i] = temp;
-            }
-        }
-        System.out.println();
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(a[i][j] + " ");
-            }
+        for (int i = 0; i < array[0].length; i++) {
+            for (int j = 0; j < (array.length); j++)
+                System.out.print(array[j][i] + " ");
             System.out.println();
         }
     }
