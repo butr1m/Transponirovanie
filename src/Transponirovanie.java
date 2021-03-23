@@ -12,8 +12,8 @@ public class Transponirovanie {
             }
             System.out.println();
         }
-        for (int i = 0; i < array[0].length; i++) {
-            for (int j = 0; j < (array.length); j++)
+        for (int i = 0; i < b; i++) {
+            for (int j = 0; j < a; j++)
                 System.out.print(array[j][i] + " ");
             System.out.println();
         }
